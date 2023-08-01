@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: create-book-stream
+  cloud:
+    stream:
+      bindings:
+        publish-out-0:
+          destination: publisher_channel
+    function:
+      definition: publish
+
